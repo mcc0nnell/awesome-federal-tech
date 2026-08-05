@@ -20,7 +20,7 @@ Focus areas: RMF / FedRAMP / ATO automation, DevSecOps, supply chain, containers
 - [Observability](#observability)
 - [Accessibility](#accessibility)
 - [AI tooling](#ai-tooling)
-- [Experimental infrastructure](#experimental-infrastructure)
+- [Experimental Infrastructure and Scientific Assurance](#experimental-infrastructure-and-scientific-assurance)
 - [Federal digital service code](#federal-digital-service-code)
 - [Contributing](#contributing)
 - [Security & disclaimer](#security--disclaimer)
@@ -91,16 +91,58 @@ Focus areas: RMF / FedRAMP / ATO automation, DevSecOps, supply chain, containers
 - **[TalkPipe](https://github.com/sandialabs/talkpipe)** – Streaming AI pipelines and composable RAG.
 - **[AI Verify](https://github.com/IMDA-BTG/aiverify)** – Testing toolkit for AI governance and model behavior.
 
-## Experimental infrastructure
+## Experimental Infrastructure and Scientific Assurance
 
-Cyber ranges, emulation, and scientific experiment tooling. Not general-purpose app hosting.
+High-fidelity cyber experimentation, cyber ranges, synthetic users, cyber-physical systems, scientific workflow provenance, uncertainty quantification, and authorization evidence pipelines. These tools form **capability stacks**, not isolated links.
 
-- **[minimega](https://github.com/sandia-minimega/minimega)** – VMs, containers, SDN. Laptop to cluster.
-- **[FIREWHEEL](https://github.com/sandialabs/firewheel)** – Modular, repeatable experiment orchestration (Emulytics).
-- **[phenix](https://github.com/sandialabs/sceptre-phenix)** – Topology/orchestration UI for minimega (including SCEPTRE workflows).
+See also:
+- [Reference architectures](docs/reference-architectures/experimental-infrastructure.md)
+- [Accessible Information Emulytics](docs/reference-architectures/accessible-information-emulytics.md)
+- [Sandia Emulytics ecosystem](docs/ecosystems/sandia-emulytics.md)
+- [CMU SEI Crucible ecosystem](docs/ecosystems/cmu-sei-crucible.md)
+- [MITRE SAF ecosystem](docs/ecosystems/mitre-saf.md)
+
+### Environment & orchestration
+
+- **[minimega](https://github.com/sandia-minimega/minimega)** – Lightweight VMs, containers, SDN; scales from laptop to large clusters.
+- **[FIREWHEEL](https://github.com/sandialabs/firewheel)** – Modular experiment orchestration and model-component framework (Emulytics).
+- **[phenix](https://github.com/sandialabs/sceptre-phenix)** – Topology and orchestration UI/workflow engine for minimega, including SCEPTRE ICS workflows.
+- **[TopoMojo](https://github.com/cmu-sei/TopoMojo)** – Virtual lab builder/player for training topologies (Crucible).
 - **[wiretap](https://github.com/sandialabs/wiretap)** – Privilege-light WireGuard tunneling for segmented experiment networks.
 
-Expect operational overhead. Read licenses and deployment assumptions before you commit a range design to them.
+### Synthetic users & adversary behavior
+
+- **[GHOSTS](https://github.com/cmu-sei/GHOSTS)** – Realistic NPC / synthetic-user framework spanning cyber, social, and cognitive domains.
+- **[Apache CALDERA](https://github.com/apache/caldera)** – ATT&CK-based adversary emulation, now incubating at Apache after originating at MITRE.
+- **[CALDERA for OT](https://github.com/mitre/caldera-ot)** – OT/ICS protocol plugins for CALDERA.
+
+### Cyber-physical & domain models
+
+- **[SCEPTRE documentation](https://github.com/sandialabs/sceptre-docs)** + phenix apps – High-fidelity ICS and critical-infrastructure Emulytics.
+- **[ExaGO](https://github.com/ORNL/ExaGO)** – Exascale power-grid optimization (consequence modeling).
+- **[Conduit](https://github.com/LLNL/conduit)** – Hierarchical scientific data exchange for multi-physics coupling.
+
+### Scientific assurance, provenance & UQ
+
+- **[Flowcept](https://github.com/ORNL/flowcept)** – Runtime provenance for scientific and AI workflows.
+- **[Dakota](https://github.com/snl-dakota/dakota)** – Optimization, uncertainty quantification, sensitivity analysis.
+- **[Pyomo](https://github.com/Pyomo/pyomo)** – Python optimization modeling language (Sandia roots).
+
+### Governed AI & assessment evidence
+
+- **[Atlas UI 3](https://github.com/sandialabs/atlas-ui-3)** – Governed multi-LLM agents with MCP, access control, and audit.
+- **[TalkPipe](https://github.com/sandialabs/talkpipe)** – Streaming AI / RAG pipeline composition.
+- **[Heimdall2](https://github.com/mitre/heimdall2)** / **[SAF CLI](https://github.com/mitre/saf)** – Assessment result storage, visualization, and pipeline tooling.
+- **[eMASSer](https://github.com/mitre/emasser)** – CLI automation against the eMASS RMF API.
+- **[Vulcan](https://github.com/mitre/vulcan)** – STIG authoring and InSpec profile development.
+
+### Reference capability stacks (summary)
+
+1. **Cyber Experimentation** – A proposed stack combining CALDERA, GHOSTS, minimega/TopoMojo, FIREWHEEL/phenix, Flowcept, Dakota, and SAF/Heimdall through project-specific adapters.
+2. **Cyber-Physical Resilience** – A proposed composition of SCEPTRE/phenix, ExaGO, Conduit, Dakota/Pyomo, and Flowcept.
+3. **High-Assurance AI Operations** – A proposed composition of Atlas UI 3, TalkPipe, Flowcept, and SAF/Heimdall/eMASSer/OSCAL.
+
+Expect operational overhead, privileged components, and isolation requirements. Read licenses, security notes, and deployment assumptions before committing a range or analysis design to any of these platforms.
 
 ## Federal digital service code
 
@@ -112,7 +154,7 @@ Expect operational overhead. Read licenses and deployment assumptions before you
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [inclusion criteria](docs/inclusion-criteria.md).
 
-**Scope rule:** code repositories only (GitHub and other public forges). No policy portals, marketplaces, or documentation-only sites.
+**Scope rule:** public code and official technical repositories containing deployable software, schemas, models, reference implementations, or essential project documentation. Policy portals, marketplaces, and standalone guidance are out of scope.
 
 Submit via the Resource Submission issue template. Canonical data: `data/resources.yml` (validated in CI).
 
