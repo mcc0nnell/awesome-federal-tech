@@ -11,7 +11,9 @@ A resource is eligible when it meets **all** of the following:
    Directly useful for federal practitioners working on RMF, FedRAMP, ATO
    automation, continuous monitoring, supply-chain security, DevSecOps,
    containers/platforms, Section 508 / accessibility, AI governance in
-   regulated environments, or experimental cyber infrastructure.
+   regulated environments, experimental cyber infrastructure, cyber ranges,
+   synthetic-user systems, scientific workflow provenance, uncertainty
+   quantification, or cyber-physical systems research.
 
 3. **Maintenance status**  
    Prefer meaningful activity (commits, releases) within the last 18–24 months.

@@ -16,6 +16,10 @@
 - Improve persona “Start Here” guidance based on user input.
 - Add any missing Platform One / Big Bang related public materials.
 - Review and update FedRAMP/OSCAL entries for current official locations.
+- Expand Experimental Infrastructure and Scientific Assurance catalog with
+  national-laboratory Emulytics, Crucible, and scientific workflow platforms
+  (minimega/FIREWHEEL/phenix, GHOSTS, CALDERA, Flowcept, Dakota, Conduit, etc.).
+- Publish reference architectures and Accessible Information Emulytics note.
 
 ## Days 61–90 (Sustainability)
 
