@@ -32,7 +32,6 @@ Focus areas: RMF / FedRAMP / ATO automation, DevSecOps, supply chain, containers
 
 - **[OSCAL](https://github.com/usnistgov/OSCAL)** – Machine-readable controls, SSPs, assessment plans/results. The path off Word/Excel packages.
 - **[OSCAL Content](https://github.com/usnistgov/oscal-content)** – NIST catalogs and profiles in OSCAL.
-- **[FedRAMP Automation](https://github.com/GSA/fedramp-automation)** – Official OSCAL baselines and templates. Check maturity before you bet a process on it.
 - **[Heimdall2](https://github.com/mitre/heimdall2)** – Store and visualize assessment results (HDF).
 - **[SAF CLI](https://github.com/mitre/saf)** – Convert/filter/report assessment data in pipelines.
 - **[Lula](https://github.com/defenseunicorns/lula)** – OSCAL validation aimed at cloud-native systems.
