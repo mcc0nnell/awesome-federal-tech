@@ -50,6 +50,7 @@ VALID_CATEGORIES = {
     "devsecops",
     "zero-trust-iam",
     "cloud",
+    "experimental-infrastructure",
     "containers-k8s",
     "observability-ir",
     "accessibility",

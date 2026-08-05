@@ -16,6 +16,9 @@ enumeration.
 - **zero-trust-iam** – Zero trust architecture, identity and access management
 - **cloud** – AWS GovCloud, Azure Government, Google Public Sector, related
   guidance
+- **experimental-infrastructure** – High-fidelity cyber experimentation,
+  emulation orchestration, cyber-physical systems, digital twins, cyber ranges,
+  and supporting scientific analysis tooling
 - **containers-k8s** – Kubernetes, containers, serverless platforms in
   government contexts
 - **observability-ir** – Logging, observability, incident response
