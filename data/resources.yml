@@ -1,1 +1,10 @@
-PLACEHOLDER
+- name: NIST Cybersecurity Framework 2.0
+  url: https://www.nist.gov/cyberframework
+  organization: NIST
+  description: Risk-based framework for managing and communicating cybersecurity outcomes across organizations.
+  categories:
+  - foundations
+  resource_type: framework
+  status: active
+  federal_relevance: Widely used across federal programs to organize cybersecurity risk and outcomes.
+  last_checked: '2026-08-04'
