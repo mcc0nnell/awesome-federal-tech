@@ -18,7 +18,24 @@ enumeration.
   guidance
 - **experimental-infrastructure** – High-fidelity cyber experimentation,
   emulation orchestration, cyber-physical systems, digital twins, cyber ranges,
-  and supporting scientific analysis tooling
+  experiment design, environment orchestration, and supporting scientific
+  analysis tooling (Emulytics-class platforms)
+- **cyber-ranges** – Virtualized or hybrid environments for cyber training,
+  testing, red-team/blue-team exercises, and adversary emulation at scale
+- **synthetic-users** – Frameworks that generate realistic human user behavior,
+  traffic, artifacts, and cognitive/social models for populated environments
+- **exercise-orchestration** – Tools for scenario design, inject management,
+  session control, and multi-team exercise execution
+- **cyber-physical** – Simulation and emulation of industrial control systems,
+  critical infrastructure, and physical-process fidelity
+- **scientific-workflows** – Provenance, data exchange, and orchestration for
+  scientific and HPC workflows
+- **uncertainty-quantification** – Optimization, sensitivity analysis, and
+  uncertainty quantification toolkits for model-based analysis
+- **provenance** – Runtime and workflow provenance capture for reproducibility
+  and assurance evidence
+- **security-automation** – Adversary emulation, automated assessment, and
+  security-control evidence pipelines
 - **containers-k8s** – Kubernetes, containers, serverless platforms in
   government contexts
 - **observability-ir** – Logging, observability, incident response
