@@ -1,0 +1,33 @@
+name: Link Check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Weekly Monday 06:00 UTC
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "README.md"
+      - "data/**"
+      - "docs/**"
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2.0.2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --timeout 20
+            --max-concurrency 8
+            --exclude-mail
+            --exclude 'https://github.com/.*/issues'
+            --exclude 'https://github.com/.*/pull'
+            README.md docs/ data/
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

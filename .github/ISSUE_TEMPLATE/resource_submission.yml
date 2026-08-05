@@ -1,0 +1,88 @@
+name: Resource Submission
+description: Propose a new resource for inclusion
+title: "[Resource] "
+labels: ["resource-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a resource. Please complete all fields.
+        Review the [inclusion criteria](docs/inclusion-criteria.md) first.
+  - type: input
+    id: name
+    attributes:
+      label: Resource Name
+      description: Official or commonly used name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Canonical URL
+      description: Prefer the official GitHub repository or primary documentation site
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization / Maintainer
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description
+      description: 1–3 sentences. Be factual and concise.
+    validations:
+      required: true
+  - type: dropdown
+    id: categories
+    attributes:
+      label: Primary Categories
+      multiple: true
+      options:
+        - foundations
+        - rmf-80053
+        - fedramp-oscal-ato
+        - continuous-monitoring
+        - supply-chain
+        - devsecops
+        - zero-trust-iam
+        - cloud
+        - containers-k8s
+        - observability-ir
+        - accessibility
+        - ai-governance
+        - privacy-records
+        - acquisition
+        - oss-policy
+        - case-studies
+        - training-communities
+        - reference-architectures
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License (if applicable)
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this belong?
+      description: Explain federal relevance and practical utility.
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Security / Limitations Notes
+      description: Required for executable tools. Known issues, SBOM, evaluation advice.
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have read the inclusion criteria and believe this resource meets them.
+          required: true
+        - label: This is not a duplicate of an existing entry.
+          required: true
