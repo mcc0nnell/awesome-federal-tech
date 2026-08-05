@@ -14,6 +14,6 @@ Sandia National Laboratories' Emulytics program provides modular, high-fidelity 
 
 Supporting model-component repositories (firewheel_repo_*) and SCEPTRE documentation exist under sandialabs. Many internal ARCADE / gait / protonuke components remain research or limited-release.
 
-**Usage pattern.** FIREWHEEL or phenix drives experiments on minimega; model components encapsulate services, networks, and ICS elements; Dakota closes the analysis loop; Atlas/TalkPipe support governed AI-assisted post-processing.
+**Potential usage pattern.** FIREWHEEL or phenix can drive experiments on minimega; model components encapsulate services, networks, and ICS elements. Dakota can support analysis, while Atlas UI 3 and TalkPipe are candidates for governed AI-assisted post-processing. Cross-project integration requires validation.
 
 Evaluate privilege requirements, image provenance, and isolation carefully before operational range use.

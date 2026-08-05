@@ -21,7 +21,7 @@ World → People → Information → Burden → Decision → Outcome
 
 ## How existing platforms support the lower layers
 
-Existing federal and laboratory tools already provide strong support for the *World* and early *People/Information* layers:
+Existing federal and laboratory tools offer candidate building blocks for the *World* and early *People/Information* layers:
 
 | Layer support | Tools |
 |---------------|-------|
@@ -37,7 +37,7 @@ Existing federal and laboratory tools already provide strong support for the *Wo
 | Analysis pipelines | TalkPipe |
 | Governed interaction | Atlas UI 3 |
 
-These platforms can instantiate infrastructure failures, inject adversary actions, generate realistic background activity, and record outcomes with provenance.
+These platforms can support infrastructure-failure experiments, adversary actions, realistic background activity, and provenance. Combining them into one campaign would require explicit adapters and validation.
 
 ## The missing layer (explicit gap)
 
@@ -66,6 +66,6 @@ The combination of:
 3. adversary and inject control (CALDERA + Crucible components),
 4. scientific analysis (Dakota, Flowcept, TalkPipe),
 
-creates a natural substrate for *Accessible Information Emulytics* research. The open gap is the human-factors instrumentation and outcome model itself.
+could create a useful substrate for *Accessible Information Emulytics* research. The open gap is the human-factors instrumentation and outcome model itself.
 
 This catalog records the substrate; it does not claim that the accessibility-burden measurement layer already exists.

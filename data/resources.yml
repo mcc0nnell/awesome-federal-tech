@@ -1,1 +1,704 @@
-see local
+- name: NIST OSCAL
+  url: https://github.com/usnistgov/OSCAL
+  organization: NIST
+  description: Official schemas, models, and tooling for machine-readable controls, SSPs, assessment plans, and results.
+  categories:
+  - rmf-80053
+  - fedramp-oscal-ato
+  - continuous-monitoring
+  resource_type: framework
+  status: active
+  federal_relevance: Official schemas, models, and tooling for machine-readable controls, SSPs, assessment plans, and results.
+  license: Public Domain
+  last_checked: '2026-08-04'
+  security_notes: Official government repository; review schema and release changes before production adoption.
+- name: NIST OSCAL Content
+  url: https://github.com/usnistgov/oscal-content
+  organization: NIST
+  description: Machine-readable NIST control catalogs, profiles, and related OSCAL content maintained by NIST.
+  categories:
+  - rmf-80053
+  - fedramp-oscal-ato
+  resource_type: content
+  status: active
+  federal_relevance: Machine-readable NIST control catalogs, profiles, and related OSCAL content maintained by NIST.
+  license: Public Domain
+  last_checked: '2026-08-04'
+- name: FedRAMP Automation
+  url: https://github.com/GSA/fedramp-automation
+  organization: GSA
+  description: Official OSCAL-based FedRAMP baselines, templates, registries, and automation artifacts.
+  categories:
+  - fedramp-oscal-ato
+  - rmf-80053
+  resource_type: content
+  status: active
+  federal_relevance: Official OSCAL-based FedRAMP baselines, templates, registries, and automation artifacts.
+  last_checked: '2026-08-04'
+  security_notes: Official GSA repository; validate release maturity and current program guidance before operational use.
+- name: U.S. Web Design System
+  url: https://github.com/uswds/uswds
+  organization: GSA
+  description: Accessible design system and component library for consistent, trustworthy federal digital services.
+  categories:
+  - accessibility
+  - case-studies
+  resource_type: framework
+  status: active
+  federal_relevance: Accessible design system and component library for consistent, trustworthy federal digital services.
+  license: CC0-1.0
+  last_checked: '2026-08-04'
+  security_notes: Review dependency advisories and test components within the target application and assistive-technology stack.
+- name: 18F GitHub Organization
+  url: https://github.com/18F
+  organization: 18F
+  description: Public repositories documenting federal digital service patterns, tools, and historical implementations.
+  categories:
+  - case-studies
+  - oss-policy
+  resource_type: reference
+  status: active
+  federal_relevance: Public repositories documenting federal digital service patterns, tools, and historical implementations.
+  last_checked: '2026-08-04'
+- name: MITRE Heimdall2
+  url: https://github.com/mitre/heimdall2
+  organization: MITRE
+  description: Visualizes, normalizes, and stores security assessment data using the Heimdall Data Format.
+  categories:
+  - fedramp-oscal-ato
+  - continuous-monitoring
+  resource_type: tool
+  status: active
+  federal_relevance: Visualizes, normalizes, and stores security assessment data using the Heimdall Data Format.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: MITRE SAF CLI
+  url: https://github.com/mitre/saf
+  organization: MITRE
+  description: Command-line tooling for converting, validating, filtering, and reporting security assessment results.
+  categories:
+  - fedramp-oscal-ato
+  - continuous-monitoring
+  - devsecops
+  resource_type: tool
+  status: active
+  federal_relevance: Command-line tooling for converting, validating, filtering, and reporting security assessment results.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Lula
+  url: https://github.com/defenseunicorns/lula
+  organization: Defense Unicorns
+  description: OSCAL-oriented compliance validation tool for cloud-native systems and automated evidence collection.
+  categories:
+  - fedramp-oscal-ato
+  - continuous-monitoring
+  - containers-k8s
+  resource_type: tool
+  status: active
+  federal_relevance: OSCAL-oriented compliance validation tool for cloud-native systems and automated evidence collection.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: GovReady-Q
+  url: https://github.com/GovReady/govready-q
+  organization: GovReady PBC
+  description: Open-source governance, risk, and compliance platform for security documentation and assessment workflows.
+  categories:
+  - fedramp-oscal-ato
+  - rmf-80053
+  resource_type: platform
+  status: active
+  federal_relevance: Open-source governance, risk, and compliance platform for security documentation and assessment workflows.
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: OpenSCAP
+  url: https://github.com/OpenSCAP/openscap
+  organization: OpenSCAP
+  description: SCAP-compliant configuration and vulnerability assessment engine used in automated compliance workflows.
+  categories:
+  - continuous-monitoring
+  - rmf-80053
+  resource_type: tool
+  status: active
+  federal_relevance: SCAP-compliant configuration and vulnerability assessment engine used in automated compliance workflows.
+  license: LGPL-2.1
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities befor agency use.
+- name: ComplianceAsCode Content
+  url: https://github.com/ComplianceAsCode/content
+  organization: ComplianceAsCode
+  description: Machine-readable security configuration content for SCAP, Ansible, Bash, and multiple compliance baselines.
+  categories:
+  - rmf-80053
+  - continuous-monitoring
+  - devsecops
+  resource_type: content
+  status: active
+  federal_relevance: Machine-readable security configuration content for SCAP, Ansible, Bash, and multiple compliance baselines.
+  license: BSD-3-Clause
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: CISA CSET
+  url: https://github.com/cisagov/cset
+  organization: CISA
+  description: Cyber Security Evaluation Tool supporting structured assessments against multiple standards and frameworks.
+  categories:
+  - continuous-monitoring
+  - rmf-80053
+  resource_type: tool
+  status: active
+  federal_relevance: Cyber Security Evaluation Tool supporting structured assessments against multiple standards and frameworks.
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Trivy
+  url: https://github.com/aquasecurity/trivy
+  organization: Aqua Security
+  description: Scanner for vulnerabilities, misconfigurations, secrets, licenses, container images, repositories, and infrastructure code.
+  categories:
+  - supply-chain
+  - devsecops
+  - containers-k8s
+  resource_type: tool
+  status: active
+  federal_relevance: Scanner for vulnerabilities, misconfigurations, secrets, licenses, container images, repositories, and infrastructure code.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Syft
+  url: https://github.com/anchore/syft
+  organization: Anchore
+  description: Generates software bills of materials from container images and filesystems in SPDX and CycloneDX formats.
+  categories:
+  - supply-chain
+  resource_type: tool
+  status: active
+  federal_relevance: Generates software bills of materials from container images and filesystems in SPDX and CycloneDX formats.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Grype
+  url: https://github.com/anchore/grype
+  organization: Anchore
+  description: Scans container images, filesystems, and SBOMs for known vulnerabilities.
+  categories:
+  - supply-chain
+  - continuous-monitoring
+  resource_type: tool
+  status: active
+  federal_relevance: Scans container images, filesystems, and SBOMs for known vulnerabilities.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Cosign
+  url: https://github.com/sigstore/cosign
+  organization: Sigstore
+  description: Signs and verifies container images, binaries, SBOMs, and other software artifacts.
+  categories:
+  - supply-chain
+  - devsecops
+  resource_type: tool
+  status: active
+  federal_relevance: Signs and verifies container images, binaries, SBOMs, and other software artifacts.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: OpenSSF Scorecard
+  url: https://github.com/ossf/scorecard
+  organization: OpenSSF
+  description: Automated checks that assess open-source project security practices and supply-chain risk signals.
+  categories:
+  - supply-chain
+  - oss-policy
+  resource_type: tool
+  status: active
+  federal_relevance: Automated checks that assess open-source project security practices and supply-chain risk signals.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Semgrep
+  url: https://github.com/semgrep/semgrep
+  organization: Semgrep
+  description: Static analysis engine for finding security defects and enforcing secure coding patterns.
+  categories:
+  - devsecops
+  - supply-chain
+  resource_type: tool
+  status: active
+  federal_relevance: Static analysis engine for finding security defects and enforcing secure coding patterns.
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vullnerabilities before agency use.
+- name: OWASP Dependency-Check
+  url: https://github.com/dependency-check/DependencyCheck
+  organization: OWASP
+  description: Software composition analysis tool that identifies known vulnerable third-party dependencies.
+  categories:
+  - supply-chain
+  - devsecops
+  resource_type: tool
+  status: active
+  federal_relevance: Software composition analysis tool that identifies known vulnerable third-party dependencies.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: OWASP ZAP
+  url: https://github.com/zaproxy/zaproxy
+  organization: OWASP
+  description: Web application security scanner supporting automated and interactive dynamic testing.
+  categories:
+  - devsecops
+  - continuous-monitoring
+  resource_type: tool
+  status: active
+  federal_relevance: Web application security scanner supporting automated and interactive dynamic testing.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Gitleaks
+  url: https://github.com/gitleaks/gitleaks
+  organization: Gitleaks
+  description: Detects hard-coded secrets in Git repositories, files, commits, and CI pipelines.
+  categories:
+  - devsecops
+  - supply-chain
+  resource_type: tool
+  status: active
+  federal_relevance: Detects hard-coded secrets in Git repositories, files, commits, and CI pipelines.
+  license: MIT
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Open Policy Agent
+  url: https://github.com/open-policy-agent/opa
+  organization: CNCF
+  description: General-purpose policy engine for enforcing machine-readable rules across applications and infrastructure.
+  categories:
+  - devsecops
+  - containers-k8s
+  resource_type: tool
+  status: active
+  federal_relevance: General-purpose policy engine for enforcing machine-readable rules across applications and infrastructure.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Kyverno
+  url: https://github.com/kyverno/kyverno
+  organization: CNCF
+  description: Kubernetes-native policy engine for validation, mutation, generation, and image verification.
+  categories:
+  - containers-k8s
+  - devsecops
+  resource_type: tool
+  status: active
+  federal_relevance: Kubernetes-native policy engine for validation, mutation, generation, and image verification.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Checkov
+  url: https://github.com/bridgecrewio/checkov
+  organization: Palo Alto Networks
+  description: Static analysis tool for infrastructure-as-code, Kubernetes, and pipeline configuration security.
+  categories:
+  - devsecops
+  - cloud
+  resource_type: tool
+  status: active
+  federal_relevance: Static analysis tool for infrastructure-as-code, Kubernetes, and pipeline configuration security.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Cloud Custodian
+  url: https://github.com/cloud-custodian/cloud-custodian
+  organization: Cloud Custodian
+  description: Policy-as-code engine for cloud governance, security controls, and automated remediation.
+  categories:
+  - cloud
+  - devsecops
+  - continuous-monitoring
+  resource_type: tool
+  status: active
+  federal_relevance: Policy-as-code engine for cloud governance, security controls, and automated remediation.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Terraform
+  url: https://github.com/hashicorp/terraform
+  organization: HashiCorp
+  description: Infrastructure-as-code engine widely used to provision and manage federal cloud environments.
+  categories:
+  - cloud
+  - devsecops
+  resource_type: tool
+  status: active
+  federal_relevance: Infrastructure-as-code engine widely used to provision and manage federal cloud environments.
+  last_checked: '2026-08-04'
+  security_notes: Review current licensing, provider trust, state-file protections, and execution privileges before use.
+- name: Falco
+  url: https://github.com/falcosecurity/falco
+  organization: CNCF
+  description: Runtime threat detection for containers, Kubernetes, hosts, and cloud-native workloads.
+  categories:
+  - containers-k8s
+  - observability-ir
+  resource_type: tool
+  status: active
+  federal_relevance: Runtime threat detection for containers, Kubernetes, hosts, and cloud-native workloads.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Kubernetes
+  url: https://github.com/kubernetes/kubernetes
+  organization: CNCF
+  description: Container orchestration platform underlying many federal DevSecOps and platform engineering environments.
+  categories:
+  - containers-k8s
+  - cloud
+  resource_type: platform
+  status: active
+  federal_relevance: Container orchestration platform underlying many federal DevSecOps and platform engineering environments.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Use supported releases, hardened configurations, admission controls, and agency-approved deployment baselines.
+- name: Platform One Big Bang
+  url: https://github.com/DoD-Platform-One/bigbang
+  organization: U.S. Department of Defense
+  description: GitOps-based package and deployment framework for hardened cloud-native DevSecOps platforms.
+  categories:
+  - containers-k8s
+  - devsecops
+  - reference-architectures
+  resource_type: platform
+  status: active
+  federal_relevance: GitOps-based package and deployment framework for hardened cloud-native DevSecOps platforms.
+  last_checked: '2026-08-04'
+  security_notes: DoD reference implementation; independently assess packages, overlays, operational assumptions, and authorization fit.
+- name: OpenTelemetry
+  url: https://github.com/open-telemetry/opentelemetry-specification
+  organization: CNCF
+  description: Vendor-neutral specifications for distributed traces, metrics, logs, and telemetry context.
+  categories:
+  - observability-ir
+  resource_type: standard
+  status: active
+  federal_relevance: Vendor-neutral specifications for distributed traces, metrics, logs, and telemetry context.
+  last_checked: '2026-08-04'
+- name: Prometheus
+  url: https://github.com/prometheus/prometheus
+  organization: CNCF
+  description: Time-series monitoring and alerting system commonly used for cloud-native continuous monitoring.
+  categories:
+  - observability-ir
+  - continuous-monitoring
+  resource_type: tool
+  status: active
+  federal_relevance: Time-series monitoring and alerting system commonly used for cloud-native continuous monitoring.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: Grafana
+  url: https://github.com/grafana/grafana
+  organization: Grafana Labs
+  description: Visualization and dashboard platform for operational, security, and compliance telemetry.
+  categories:
+  - observability-ir
+  - continuous-monitoring
+  resource_type: platform
+  status: active
+  federal_relevance: Visualization and dashboard platform for operational, security, and compliance telemetry.
+  last_checked: '2026-08-04'
+  security_notes: Review edition licensing, plugins, authentication, data-source permissions, and exposed dashboards.
+- name: Wazuh
+  url: https://github.com/wazuh/wazuh
+  organization: Wazuh
+  description: Open-source security monitoring platform combining endpoint telemetry, detection, and compliance capabilities.
+  categories:
+  - observability-ir
+  - continuous-monitoring
+  resource_type: platform
+  status: active
+  federal_relevance: Open-source security monitoring platform combining endpoint telemetry, detection, and compliance capabilities.
+  last_checked: '2026-08-04'
+  security_notes: Assess agent privileges, rule quality, update provenance, data retention, and operational hardening.
+- name: axe-core
+  url: https://github.com/dequelabs/axe-core
+  organization: Deque Systems
+  description: Automated accessibility testing engine used in browsers, test suites, and CI pipelines.
+  categories:
+  - accessibility
+  - devsecops
+  resource_type: tool
+  status: active
+  federal_relevance: Automated accessibility testing engine used in browsers, test suites, and CI pipelines.
+  license: MPL-2.0
+  last_checked: '2026-08-04'
+  security_notes: Automated findings are incomplete; pair with manual testing and assistive-technology evaluation.
+- name: AI Verify
+  url: https://github.com/IMDA-BTG/aiverify
+  organization: Infocomm Media Development Authority of Singapore
+  description: Open-source testing framework and toolkit for evaluating AI governance and model behavior.
+  categories:
+  - ai-governance
+  resource_type: tool
+  status: active
+  federal_relevance: Open-source testing framework and toolkit for evaluating AI governance and model behavior.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, dependencies, signatures, deployment privileges, and known vulnerabilities before agency use.
+- name: FIREWHEEL
+  url: https://github.com/sandialabs/firewheel
+  organization: Sandia National Laboratories
+  description: Experiment orchestration framework for building and controlling repeatable, scalable experiments of distributed network systems as part of Sandia Emulytics.
+  categories:
+  - experimental-infrastructure
+  resource_type: platform
+  status: active
+  federal_relevance: Supports rigorous, modular cyber experimentation and digital twin-style network environments for federal research and operational analysis.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, model-component provenance, deployment privileges, and isolation requirements before operational use.
+- name: phenix
+  url: https://github.com/sandialabs/sceptre-phenix
+  organization: Sandia National Laboratories
+  description: Orchestration tool and GUI for defining, deploying, and managing complex cyber experiments on the minimega platform, including SCEPTRE ICS workflows.
+  categories:
+  - experimental-infrastructure
+  resource_type: platform
+  status: active
+  federal_relevance: Provides experiment topology management and orchestration for high-fidelity cyber and cyber-physical research environments.
+  license: GPL-3.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate container images, authentication configuration, and privilege requirements before use in shared environments.
+- name: minimega
+  url: https://github.com/sandia-minimega/minimega
+  organization: Sandia National Laboratories
+  description: Lightweight tool for launching and managing virtual machines, containers, and software-defined networks at scales from a laptop to large clusters.
+  categories:
+  - experimental-infrastructure
+  - containers-k8s
+  resource_type: tool
+  status: active
+  federal_relevance: Foundational Emulytics orchestration engine used for large-scale cyber experimentation and cyber range infrastructure.
+  license: GPL-3.0
+  last_checked: '2026-08-04'
+  security_notes: Requires privileged hypervisor access; evaluate cluster isolation, image provenance, and operational controls before use.
+- name: Atlas UI 3
+  url: https://github.com/sandialabs/atlas-ui-3
+  organization: Sandia National Laboratories
+  description: Platform for deploying AI assistants and agentic workflows with multi-LLM support, MCP integration, group-based access control, and auditability for regulated environments.
+  categories:
+  - experimental-infrastructure
+  - ai-governance
+  resource_type: platform
+  status: active
+  federal_relevance: Designed for high-trust engineering environments requiring governed AI tooling, tool approval, and traceable agent workflows.
+  last_checked: '2026-08-04'
+  security_notes: Evaluate LLM provider controls, MCP server trust boundaries, authentication, and audit logging before deployment.
+- name: TalkPipe
+  url: https://github.com/sandialabs/talkpipe
+  organization: Sandia National Laboratories
+  description: Python toolkit and dual DSL for composing streaming generative AI analytics pipelines, including RAG workflows and multi-provider LLM integration.
+  categories:
+  - experimental-infrastructure
+  - ai-governance
+  resource_type: tool
+  status: active
+  federal_relevance: Supports scriptable, reproducible AI pipelines useful for research analytics and controlled generative-AI experimentation.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Review LLM provider configuration, eval/sandboxing posture, and network egress controls before operational use.
+- name: wiretap
+  url: https://github.com/sandialabs/wiretap
+  organization: Sandia National Laboratories
+  description: Transparent VPN-like proxy that tunnels traffic via WireGuard without requiring special privileges on the server, supporting multi-hop chaining and dynamic peer management.
+  categories:
+  - experimental-infrastructure
+  resource_type: tool
+  status: active
+  federal_relevance: Useful for constrained or segmented environments, cyber ranges, and experiment connectivity where privilege-light tunneling is required.
+  last_checked: '2026-08-04'
+  security_notes: Review key handling, dual-interface security model, and network exposure assumptions before use in production or multi-tenant ranges.
+- name: GHOSTS
+  url: https://github.com/cmu-sei/GHOSTS
+  organization: CMU Software Engineering Institute
+  description: Realistic NPC and synthetic-user framework that models cyber, social, and cognitive behavior for cyber ranges, training, and exercises.
+  categories:
+  - experimental-infrastructure
+  - synthetic-users
+  - cyber-ranges
+  - exercise-orchestration
+  resource_type: platform
+  status: active
+  federal_relevance: Primary open framework for populating cyber ranges and exercises with authentic human activity, artifacts, and multi-domain behavior models.
+  license: MIT
+  last_checked: '2026-08-04'
+  security_notes: Evaluate client agent privileges, network reach, and content generation controls before use in multi-tenant or production training environments.
+- name: TopoMojo
+  url: https://github.com/cmu-sei/TopoMojo
+  organization: CMU Software Engineering Institute
+  description: Virtual lab builder and player for designing, deploying, and consuming network topologies and hands-on training content.
+  categories:
+  - experimental-infrastructure
+  - cyber-ranges
+  - exercise-orchestration
+  resource_type: platform
+  status: active
+  federal_relevance: Core Crucible component for abstracting hypervisor concerns and providing one-click lab access in cyber training and exercise environments.
+  last_checked: '2026-08-04'
+  security_notes: Requires integration with identity provider and hypervisor backends; evaluate isolation, image provenance, and access control configuration.
+- name: CALDERA
+  url: https://github.com/apache/caldera
+  organization: Apache Software Foundation (originally MITRE)
+  description: Apache Incubator adversary emulation platform built on MITRE ATT&CK for red-team, blue-team, and automated security validation.
+  categories:
+  - experimental-infrastructure
+  - security-automation
+  - cyber-ranges
+  resource_type: platform
+  status: active
+  federal_relevance: Widely used federal and research platform for repeatable adversary behavior inside cyber ranges and exercises; OT plugins extend to ICS.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Agents and C2 require careful network isolation; evaluate plugin trust, payload generation, and operational controls before range deployment.
+- name: Flowcept
+  url: https://github.com/ORNL/flowcept
+  organization: Oak Ridge National Laboratory
+  description: Runtime provenance capture for scientific and AI workflows with low-overhead observability adapters across edge, cloud, and HPC.
+  categories:
+  - experimental-infrastructure
+  - scientific-workflows
+  - provenance
+  resource_type: tool
+  status: active
+  federal_relevance: Can provide reproducibility and lineage for multi-tool Emulytics, ML, and scientific experiment campaigns.
+  license: MIT
+  last_checked: '2026-08-04'
+  security_notes: Review storage backends, network egress of provenance data, and adapter trust boundaries before use with sensitive experiment results.
+- name: Conduit
+  url: https://github.com/LLNL/conduit
+  organization: Lawrence Livermore National Laboratory
+  description: Simplified hierarchical data model and exchange library for in-core coupling, serialization, and I/O in HPC simulations.
+  categories:
+  - experimental-infrastructure
+  - scientific-workflows
+  resource_type: framework
+  status: active
+  federal_relevance: Established LLNL data interchange layer used to couple multi-physics and cyber-physical simulation packages.
+  license: BSD-3-Clause
+  last_checked: '2026-08-04'
+  security_notes: Evaluate third-party library dependencies and memory-safety posture for high-assurance simulation environments.
+- name: Dakota
+  url: https://github.com/snl-dakota/dakota
+  organization: Sandia National Laboratories
+  description: Multilevel parallel toolkit for optimization, uncertainty quantification, parameter estimation, and sensitivity analysis of computational models.
+  categories:
+  - experimental-infrastructure
+  - uncertainty-quantification
+  resource_type: framework
+  status: active
+  federal_relevance: Canonical Sandia capability for design exploration, risk analysis, and quantification of margins and uncertainty on high-performance systems.
+  license: LGPL-2.1
+  last_checked: '2026-08-04'
+  security_notes: Review interface code and parallel execution privileges; many analysis methods assume trusted model interfaces.
+- name: Pyomo
+  url: https://github.com/Pyomo/pyomo
+  organization: Pyomo Developers (Sandia origin)
+  description: Python-based open-source optimization modeling language supporting linear, nonlinear, mixed-integer, and stochastic programming.
+  categories:
+  - experimental-infrastructure
+  - uncertainty-quantification
+  resource_type: framework
+  status: active
+  federal_relevance: Widely used optimization modeling layer with deep Sandia and DOE laboratory roots; pairs with Dakota and domain solvers.
+  license: BSD-3-Clause
+  last_checked: '2026-08-04'
+  security_notes: Solver backends and model construction code should be evaluated for supply-chain and numerical-stability concerns.
+- name: eMASSer
+  url: https://github.com/mitre/emasser
+  organization: MITRE
+  description: Command-line interface that automates routine eMASS API workflows for RMF evidence and authorization package management.
+  categories:
+  - fedramp-oscal-ato
+  - security-automation
+  - continuous-monitoring
+  resource_type: tool
+  status: active
+  federal_relevance: Practical automation against the official eMASS REST API used by many DoD and federal programs for RMF evidence.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Requires eMASS API credentials and network access; protect tokens and audit all write operations carefully.
+- name: Vulcan
+  url: https://github.com/mitre/vulcan
+  organization: MITRE
+  description: Web application that streamlines STIG authoring and InSpec automated validation profile development from Security Requirements Guides.
+  categories:
+  - security-automation
+  - continuous-monitoring
+  - fedramp-oscal-ato
+  resource_type: platform
+  status: active
+  federal_relevance: Bridges high-level SRGs to STIG content and machine-readable validation code used in automated assessment pipelines.
+  last_checked: '2026-08-04'
+  security_notes: Evaluate authentication, content provenance, and deployment hardening before multi-user or production use.
+- name: ExaGO
+  url: https://github.com/ORNL/ExaGO
+  organization: Oak Ridge National Laboratory
+  description: Exascale-oriented package for solving large-scale power-grid optimization problems including security-constrained and stochastic ACOPF.
+  categories:
+  - experimental-infrastructure
+  - cyber-physical
+  - uncertainty-quantification
+  resource_type: framework
+  status: active
+  federal_relevance: Domain model for infrastructure consequence and resilience analysis that can be coupled to cyber-physical Emulytics environments.
+  license: BSD-3-Clause
+  last_checked: '2026-08-04'
+  security_notes: Review GPU/HPC dependencies and solver trust boundaries; treat as research-grade infrastructure modeling.
+- name: FIREWHEEL Model Component Base
+  url: https://github.com/sandialabs/firewheel_repo_base
+  organization: Sandia National Laboratories
+  description: Foundational model components required by almost every FIREWHEEL experiment (graph initialization, VM objects, minimega conversion).
+  categories:
+  - experimental-infrastructure
+  resource_type: content
+  status: active
+  federal_relevance: Required base layer for constructing modular Emulytics experiments with FIREWHEEL.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+- name: phenix Apps
+  url: https://github.com/sandialabs/sceptre-phenix-apps
+  organization: Sandia National Laboratories
+  description: Official applications and Scorch components that implement the phenix App Contract for experiment automation and SCEPTRE integration.
+  categories:
+  - experimental-infrastructure
+  - cyber-physical
+  resource_type: content
+  status: active
+  federal_relevance: Extends phenix with ICS/SCEPTRE, traffic generation, Caldera integration, and other experiment services.
+  license: GPL-3.0
+  last_checked: '2026-08-04'
+  security_notes: Review each app for privilege and network assumptions before inclusion in shared ranges.
+- name: SCEPTRE Documentation
+  url: https://github.com/sandialabs/sceptre-docs
+  organization: Sandia National Laboratories
+  description: Documentation for the SCEPTRE cyber-physical emulation platform built on minimega and phenix.
+  categories:
+  - experimental-infrastructure
+  - cyber-physical
+  resource_type: reference
+  status: active
+  federal_relevance: Primary public documentation for Sandia’s high-fidelity ICS and critical-infrastructure Emulytics workflows.
+  last_checked: '2026-08-04'
+- name: CALDERA for OT
+  url: https://github.com/mitre/caldera-ot
+  organization: MITRE
+  description: Plugins that extend CALDERA adversary emulation to Operational Technology protocols (Modbus, DNP3, BACnet, etc.) using ATT&CK for ICS.
+  categories:
+  - experimental-infrastructure
+  - cyber-physical
+  - security-automation
+  resource_type: tool
+  status: active
+  federal_relevance: Enables realistic OT/ICS adversary behavior inside cyber-physical ranges and Emulytics experiments.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: OT protocol plugins can affect real or simulated industrial processes; isolate carefully and validate against target systems.

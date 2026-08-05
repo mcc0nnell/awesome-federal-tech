@@ -11,6 +11,6 @@ Carnegie Mellon University Software Engineering Institute (SEI) maintains the Cr
 
 GHOSTS is the most mature and widely referenced public component; it produces authentic user activity for ranges and can be driven by higher-level exercise controllers.
 
-**Usage pattern.** TopoMojo provisions environments; Steamfitter and related services schedule injects and tasks; GHOSTS populates the environment with realistic human activity; higher-level Crucible services coordinate multi-team scenarios.
+**Potential usage pattern.** TopoMojo can provision environments; Steamfitter and related services can schedule injects and tasks; GHOSTS can populate an environment with realistic human activity; higher-level Crucible services can coordinate multi-team scenarios.
 
 Confirm current public availability of each Crucible microservice; some components are distributed primarily via Helm charts or internal SEI channels.

@@ -18,7 +18,7 @@ These are not product recommendations. They are patterns observed across Sandia 
 | Uncertainty / design | Campaign design, sensitivity, UQ | Dakota |
 | Assessment | Result normalization and evidence | Heimdall2, SAF CLI |
 
-**Notes.** FIREWHEEL and phenix sit naturally on minimega. GHOSTS and CALDERA can be injected as model components or as external actors. Flowcept provides the missing reproducibility layer for multi-tool campaigns.
+**Notes.** FIREWHEEL and phenix are designed around minimega. GHOSTS and CALDERA could participate as model components or external actors, but that composition would require integration adapters. Flowcept is a candidate provenance layer for multi-tool campaigns.
 
 ## Reference Architecture 2: Cyber-Physical Resilience
 
@@ -33,7 +33,7 @@ These are not product recommendations. They are patterns observed across Sandia 
 | Optimization / UQ | Parameter studies, reliability, design | Dakota, Pyomo |
 | Provenance | Reproducibility of multi-physics runs | Flowcept |
 
-**Notes.** SCEPTRE workflows are commonly driven through phenix on minimega. Conduit is the established LLNL data model for coupling simulation packages. Dakota/Pyomo close the analysis loop.
+**Notes.** SCEPTRE workflows are commonly driven through phenix on minimega. Conduit could provide a data-exchange layer when coupling compatible simulation packages. Dakota and Pyomo are candidate analysis layers for parameter studies and optimization.
 
 ## Reference Architecture 3: High-Assurance AI Operations
 
@@ -47,7 +47,7 @@ These are not product recommendations. They are patterns observed across Sandia 
 | Provenance | Runtime capture of agent and workflow steps | Flowcept |
 | Authorization evidence | OSCAL / assessment packaging | SAF, Heimdall2, eMASSer, OSCAL |
 
-**Notes.** Atlas UI 3 is explicitly designed for high-trust engineering environments. TalkPipe supplies the composable pipeline layer. Flowcept and the MITRE SAF family close the assurance and evidence loop.
+**Notes.** Atlas UI 3 is designed for high-trust engineering environments. TalkPipe could supply a composable pipeline layer. Flowcept and the MITRE SAF family are candidate provenance and evidence layers; integration would require project-specific adapters.
 
 ## Maturity distinctions
 

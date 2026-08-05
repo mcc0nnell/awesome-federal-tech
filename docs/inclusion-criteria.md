@@ -2,10 +2,11 @@
 
 A resource is eligible when it meets **all** of the following:
 
-1. **Code repository**  
-   Public source repository on a code forge (GitHub, GitLab, Codeberg, etc.).
-   Policy portals, marketplaces, documentation-only sites, and PDF guidance
-   are out of scope.
+1. **Public technical repository**  
+   Public repository on a code forge containing deployable software, schemas,
+   models, reference implementations, or essential project documentation.
+   Policy portals, marketplaces, standalone documentation sites, and PDF-only
+   guidance are out of scope.
 
 2. **Federal relevance**  
    Directly useful for federal practitioners working on RMF, FedRAMP, ATO
@@ -33,7 +34,7 @@ A resource is eligible when it meets **all** of the following:
 
 ## Explicitly excluded
 
-- Policy portals, BODs pages, marketplaces, design-system *documentation* sites
+- Policy portals, BOD pages, marketplaces, and standalone documentation sites
 - Vendor marketing pages
 - Generic cybersecurity awesome lists
 - Abandoned repositories
