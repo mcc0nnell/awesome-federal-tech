@@ -1,12 +1,1 @@
-- name: FIREWHEEL
-  url: https://github.com/sandialabs/firewheel
-  organization: Sandia National Laboratories
-  description: Experiment orchestration framework for building and controlling repeatable, scalable experiments of distributed network systems as part of Sandia Emulytics.
-  categories:
-  - experimental-infrastructure
-  resource_type: platform
-  status: active
-  federal_relevance: Supports rigorous, modular cyber experimentation and digital twin-style network environments for federal research and operational analysis.
-  license: Apache-2.0
-  last_checked: '2026-08-04'
-  security_notes: Evaluate releases, model-component provenance, deployment privileges, and isolation requirements before operational use.
+PLACEHOLDER
