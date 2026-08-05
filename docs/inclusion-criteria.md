@@ -1,45 +1,42 @@
 # Inclusion Criteria
 
-A resource is eligible for inclusion when it meets **all** of the following:
+A resource is eligible when it meets **all** of the following:
 
-1. **Primary or high-quality secondary source**  
-   Official NIST, GSA, CISA, DoD, USWDS, or other federal publications and
-   repositories, or actively maintained open-source projects with clear,
-   demonstrated utility for federal practitioners.
+1. **Code repository**  
+   Public source repository on a code forge (GitHub, GitLab, Codeberg, etc.).
+   Policy portals, marketplaces, documentation-only sites, and PDF guidance
+   are out of scope.
 
 2. **Federal relevance**  
-   Directly supports one or more of: NIST RMF, FedRAMP, ATO processes, SP 800-53
-   implementation, continuous monitoring, supply-chain security, DevSecOps,
-   zero trust, cloud architecture in government environments, Section 508 /
-   accessibility, AI governance, acquisition, vendor oversight, or related
-   operational needs.
+   Directly useful for federal practitioners working on RMF, FedRAMP, ATO
+   automation, continuous monitoring, supply-chain security, DevSecOps,
+   containers/platforms, Section 508 / accessibility, AI governance in
+   regulated environments, or experimental cyber infrastructure.
 
 3. **Maintenance status**  
-   Prefer projects with meaningful activity (commits, releases, or official
-   updates) within the last 18–24 months. Archived or clearly abandoned projects
-   are excluded unless they remain the canonical reference for a standard.
+   Prefer meaningful activity (commits, releases) within the last 18–24 months.
+   Archived projects are excluded unless they remain the canonical
+   implementation of a standard.
 
 4. **License clarity**  
-   Code projects should have a clearly stated open-source license. Content-only
-   resources (publications, guidance) should be freely usable by the public.
+   Clearly stated open-source (or public domain) license.
 
 5. **Security posture**  
-   Executable tools must include security notes (known issues, recommended
-   evaluation steps, SBOM availability, signing practices). High-risk or
-   poorly maintained tools are excluded.
+   Executable tools should include security notes in this catalog (evaluation
+   steps, privileges, signing/SBOM signals). High-risk or opaque projects are
+   excluded.
 
 6. **Non-duplicative**  
-   Prefer the canonical upstream over mirrors or forks unless the fork provides
-   substantial additional federal value.
+   Prefer the canonical upstream over mirrors or thin forks.
 
-## Explicitly Excluded
+## Explicitly excluded
 
-- Generic cybersecurity “awesome” lists without federal focus
-- Vendor marketing pages (unless the page itself is a uniquely useful technical
-  resource and is clearly labeled)
+- Policy portals, BODs pages, marketplaces, design-system *documentation* sites
+- Vendor marketing pages
+- Generic cybersecurity awesome lists
 - Abandoned repositories
-- Resources whose primary purpose appears to be SEO or link farming
-- Tools that introduce unacceptable supply-chain or operational risk without
-  compensating controls
+- SEO / link-farm content
+- Tools with unacceptable supply-chain or operational risk and no compensating
+  transparency
 
 Inclusion is never an endorsement. Users must perform their own evaluation.
