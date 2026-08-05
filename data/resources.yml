@@ -8,3 +8,109 @@
   status: active
   federal_relevance: Widely used across federal programs to organize cybersecurity risk and outcomes.
   last_checked: '2026-08-04'
+- name: FIREWHEEL
+  url: https://github.com/sandialabs/firewheel
+  organization: Sandia National Laboratories
+  description: Experiment orchestration framework for building and controlling repeatable, scalable experiments of distributed network systems as part of Sandia Emulytics.
+  categories:
+  - experimental-infrastructure
+  resource_type: platform
+  status: active
+  federal_relevance: Supports rigorous, modular cyber experimentation and digital twin-style network environments for federal research and operational analysis.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate releases, model-component provenance, deployment privileges, and isolation requirements before operational use.
+- name: phenix
+  url: https://github.com/sandialabs/sceptre-phenix
+  organization: Sandia National Laboratories
+  description: Orchestration tool and GUI for defining, deploying, and managing complex cyber experiments on the minimega platform, including SCEPTRE ICS workflows.
+  categories:
+  - experimental-infrastructure
+  resource_type: platform
+  status: active
+  federal_relevance: Provides experiment topology management and orchestration for high-fidelity cyber and cyber-physical research environments.
+  license: GPL-3.0
+  last_checked: '2026-08-04'
+  security_notes: Evaluate container images, authentication configuration, and privilege requirements before use in shared environments.
+- name: minimega
+  url: https://github.com/sandia-minimega/minimega
+  organization: Sandia National Laboratories
+  description: Lightweight tool for launching and managing virtual machines, containers, and software-defined networks at scales from a laptop to large clusters.
+  categories:
+  - experimental-infrastructure
+  - containers-k8s
+  resource_type: tool
+  status: active
+  federal_relevance: Foundational Emulytics orchestration engine used for large-scale cyber experimentation and cyber range infrastructure.
+  license: GPL-3.0
+  last_checked: '2026-08-04'
+  security_notes: Requires privileged hypervisor access; evaluate cluster isolation, image provenance, and operational controls before use.
+- name: SCEPTRE
+  url: https://sandialabs.github.io/sceptre-docs/
+  organization: Sandia National Laboratories
+  description: Modeling, simulation, and testbed environment for industrial control systems that captures cyber-physical impacts of targeted events on critical infrastructure.
+  categories:
+  - experimental-infrastructure
+  resource_type: platform
+  status: active
+  federal_relevance: Supports ICS/SCADA cyber-physical experimentation relevant to critical infrastructure protection and federal OT research.
+  last_checked: '2026-08-04'
+  security_notes: Review component repositories, simulation fidelity assumptions, and hardware-in-the-loop integration requirements before operational adoption.
+- name: Dakota
+  url: https://dakota.sandia.gov/
+  organization: Sandia National Laboratories
+  description: Software for optimization, uncertainty quantification, sensitivity analysis, model calibration, and design of experiments with computational models.
+  categories:
+  - experimental-infrastructure
+  resource_type: tool
+  status: active
+  federal_relevance: Widely used for rigorous parametric analysis and uncertainty quantification accompanying high-fidelity simulation and emulation studies.
+  last_checked: '2026-08-04'
+  security_notes: Evaluate distribution channels, build provenance, and computational environment isolation for sensitive models.
+- name: Pyomo
+  url: https://www.pyomo.org/
+  organization: Sandia National Laboratories / COIN-OR
+  description: Python-based open-source optimization modeling language for formulating, solving, and analyzing mathematical optimization problems.
+  categories:
+  - experimental-infrastructure
+  resource_type: framework
+  status: active
+  federal_relevance: Supports optimization and operations-research modeling commonly paired with experimental design and resilience analysis workflows.
+  license: BSD-3-Clause
+  last_checked: '2026-08-04'
+- name: Atlas UI 3
+  url: https://github.com/sandialabs/atlas-ui-3
+  organization: Sandia National Laboratories
+  description: Platform for deploying AI assistants and agentic workflows with multi-LLM support, MCP integration, group-based access control, and auditability for regulated environments.
+  categories:
+  - experimental-infrastructure
+  - ai-governance
+  resource_type: platform
+  status: active
+  federal_relevance: Designed for high-trust engineering environments requiring governed AI tooling, tool approval, and traceable agent workflows.
+  last_checked: '2026-08-04'
+  security_notes: Evaluate LLM provider controls, MCP server trust boundaries, authentication, and audit logging before deployment.
+- name: TalkPipe
+  url: https://github.com/sandialabs/talkpipe
+  organization: Sandia National Laboratories
+  description: Python toolkit and dual DSL for composing streaming generative AI analytics pipelines, including RAG workflows and multi-provider LLM integration.
+  categories:
+  - experimental-infrastructure
+  - ai-governance
+  resource_type: tool
+  status: active
+  federal_relevance: Supports scriptable, reproducible AI pipelines useful for research analytics and controlled generative-AI experimentation.
+  license: Apache-2.0
+  last_checked: '2026-08-04'
+  security_notes: Review LLM provider configuration, eval/sandboxing posture, and network egress controls before operational use.
+- name: wiretap
+  url: https://github.com/sandialabs/wiretap
+  organization: Sandia National Laboratories
+  description: Transparent VPN-like proxy that tunnels traffic via WireGuard without requiring special privileges on the server, supporting multi-hop chaining and dynamic peer management.
+  categories:
+  - experimental-infrastructure
+  resource_type: tool
+  status: active
+  federal_relevance: Useful for constrained or segmented environments, cyber ranges, and experiment connectivity where privilege-light tunneling is required.
+  last_checked: '2026-08-04'
+  security_notes: Review key handling, dual-interface security model, and network exposure assumptions before use in production or multi-tenant ranges.
