@@ -20,6 +20,7 @@ Inclusion is never an endorsement. Users must independently evaluate every third
 - [DevSecOps, Policy-as-Code & IaC](#devsecops-policy-as-code--iac)
 - [Zero Trust & Identity](#zero-trust--identity)
 - [Cloud Platforms](#cloud-platforms)
+- [Experimental Infrastructure](#experimental-infrastructure)
 - [Containers, Kubernetes & Platforms](#containers-kubernetes--platforms)
 - [Observability & Incident Response](#observability--incident-response)
 - [Accessibility & Section 508](#accessibility--section-508)
@@ -125,6 +126,36 @@ See [AI Governance & Security](#ai-governance--security) and the CISA OSS / AI-r
 
 - Official guidance from **AWS GovCloud**, **Azure Government**, and **Google Public Sector** (consult current provider documentation for federal regions and compliance programs).
 - **[FedRAMP Marketplace](https://marketplace.fedramp.gov/)** remains the primary discovery mechanism for authorized offerings.
+
+## Experimental Infrastructure
+
+These projects provide foundational capabilities for high-fidelity cyber experimentation and scientific analysis. Rather than duplicating their functionality, they can serve as the underlying infrastructure for resilience simulations, digital twins, accessibility research, cyber ranges, and operational exercises.
+
+### Experiment Orchestration
+
+- **[FIREWHEEL](https://github.com/sandialabs/firewheel)** – Modular experiment definition, orchestration, and repeatable cyber experimentation (Sandia Emulytics).
+- **[phenix](https://github.com/sandialabs/sceptre-phenix)** – Experiment topology management, orchestration, and visualization for minimega-based environments.
+- **[minimega](https://github.com/sandia-minimega/minimega)** – Lightweight VM, container, and software-defined network orchestration at laptop-to-cluster scale.
+
+### Cyber-Physical Systems
+
+- **[SCEPTRE](https://sandialabs.github.io/sceptre-docs/)** – ICS/SCADA and cyber-physical system emulation for industrial control research.
+
+### Analysis & Scientific Computing
+
+- **[Dakota](https://dakota.sandia.gov/)** – Design of experiments, uncertainty quantification, sensitivity analysis, optimization, and model calibration.
+- **[Pyomo](https://www.pyomo.org/)** – Mathematical optimization modeling for engineering and operations research.
+
+### AI & Automation
+
+- **[Atlas UI 3](https://github.com/sandialabs/atlas-ui-3)** – Governed AI assistants, MCP integration, access control, and auditability for regulated environments.
+- **[TalkPipe](https://github.com/sandialabs/talkpipe)** – Streaming AI pipelines and composable RAG workflows.
+
+### Networking & Connectivity
+
+- **[wiretap](https://github.com/sandialabs/wiretap)** – Privilege-light WireGuard-based networking for constrained or segmented environments.
+
+These projects support reproducible cyber experimentation and are relevant for digital twins, resilience platforms, cyber ranges, accessibility research environments, and operational exercises.
 
 ## Containers, Kubernetes & Platforms
 
