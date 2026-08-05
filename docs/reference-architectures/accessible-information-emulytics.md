@@ -8,7 +8,7 @@ It extends classic Emulytics (high-fidelity cyber and cyber-physical experimenta
 
 ## Causal chain
 
-```
+```text
 World → People → Information → Burden → Decision → Outcome
 ```
 
