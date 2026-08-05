@@ -24,18 +24,6 @@
   federal_relevance: Machine-readable NIST control catalogs, profiles, and related OSCAL content maintained by NIST.
   license: Public Domain
   last_checked: '2026-08-04'
-- name: FedRAMP Automation
-  url: https://github.com/GSA/fedramp-automation
-  organization: GSA
-  description: Official OSCAL-based FedRAMP baselines, templates, registries, and automation artifacts.
-  categories:
-  - fedramp-oscal-ato
-  - rmf-80053
-  resource_type: content
-  status: active
-  federal_relevance: Official OSCAL-based FedRAMP baselines, templates, registries, and automation artifacts.
-  last_checked: '2026-08-04'
-  security_notes: Official GSA repository; validate release maturity and current program guidance before operational use.
 - name: U.S. Web Design System
   url: https://github.com/uswds/uswds
   organization: GSA
