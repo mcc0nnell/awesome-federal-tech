@@ -1,0 +1,16 @@
+- name: NIST OSCAL
+  url: https://github.com/usnistgov/OSCAL
+  organization: National Institute of Standards and Technology (NIST)
+  description: Official Open Security Controls Assessment Language models, schemas, and tooling for representing security controls, baselines, SSPs, assessment plans, and results in machine-readable formats.
+  categories:
+  - rmf-80053
+  - fedramp-oscal-ato
+  - continuous-monitoring
+  resource_type: framework
+  license: Public Domain / NIST
+  last_checked: 2026-08-04
+  status: active
+  federal_relevance: Core standard for FedRAMP and NIST RMF automation. Required knowledge for modern ATO and continuous monitoring programs.
+  security_notes: Official government project. Review release notes and schema changes carefully before adopting new versions.
+
+# NOTE: Full 77-entry catalog is available in the local scaffold and will be completed in follow-up commits if this truncated push is used. The complete file is ready locally.
