@@ -25,19 +25,56 @@ Existing federal and laboratory tools offer candidate building blocks for the *W
 
 | Layer support | Tools |
 |---------------|-------|
-| Experiment orchestration | FIREWHEEL, phenix |
+| Experiment orchestration | FIREWHEEL, phēnix / SCORCH |
 | Environments / ranges | minimega, TopoMojo |
-| Cyber-physical fidelity | SCEPTRE / ARCADE-style components |
+| Cyber-physical fidelity | SCEPTRE, Bennu / Pybennu, HELICS-connected providers |
+| Lightweight custom process models | Bennu GenericPython provider |
 | Synthetic users | GHOSTS (behavior, traffic, artifacts) |
 | Adversary behavior | CALDERA |
-| Exercise injects | Gallery, Steamfitter (Crucible) |
+| Exercise injects | Gallery, Steamfitter (Crucible), SCORCH stages |
 | Uncertainty quantification | Dakota |
 | Optimization | Pyomo |
 | Provenance | Flowcept |
 | Analysis pipelines | TalkPipe |
 | Governed interaction | Atlas UI 3 |
 
-These platforms can support infrastructure-failure experiments, adversary actions, realistic background activity, and provenance. Combining them into one campaign would require explicit adapters and validation.
+These platforms can support infrastructure-failure experiments, adversary actions, realistic background activity, cyber-physical state changes, repeatable campaign execution, and provenance. Combining them into one campaign would require explicit adapters and validation.
+
+## SCEPTRE integration boundary
+
+SCEPTRE is especially useful for the **World** side of the causal chain because its public architecture separates experiment orchestration from process simulation:
+
+```text
+phēnix / SCORCH
+        ↓
+minimega environment
+        ↓
+Bennu virtual field devices
+        ↓
+provider / co-simulation boundary
+        ↓
+physical or domain model
+```
+
+This means Accessible Information Emulytics does not need to build a cyber range, SCADA emulator, hardware-in-the-loop layer, or universal physics engine from scratch.
+
+A domain model can expose infrastructure state through Bennu while the human-centered layer observes the consequences. A lightweight pilot could use the GenericPython provider to model an information dependency such as:
+
+```text
+power availability
+    ↓
+cell-site / backhaul state
+    ↓
+alert delivery availability
+    ↓
+caption / ASL / device pathway state
+    ↓
+information burden
+    ↓
+decision and outcome
+```
+
+The important boundary is architectural: SCEPTRE generates or perturbs the lower-world state; Accessible Information Emulytics measures what that state means to people.
 
 ## The missing layer (explicit gap)
 
@@ -61,10 +98,11 @@ No current public repository listed in this catalog provides a validated, instru
 
 The combination of:
 
-1. high-fidelity cyber / cyber-physical environments (minimega + phenix / FIREWHEEL + SCEPTRE),
-2. synthetic populations (GHOSTS),
-3. adversary and inject control (CALDERA + Crucible components),
-4. scientific analysis (Dakota, Flowcept, TalkPipe),
+1. high-fidelity cyber / cyber-physical environments (minimega + phēnix / FIREWHEEL + SCEPTRE),
+2. modular process simulation (Bennu providers, HELICS, GenericPython, domain solvers),
+3. synthetic populations (GHOSTS),
+4. adversary and inject control (CALDERA + Crucible components + SCORCH),
+5. scientific analysis and provenance (Dakota, Flowcept, TalkPipe),
 
 could create a useful substrate for *Accessible Information Emulytics* research. The open gap is the human-factors instrumentation and outcome model itself.
 
