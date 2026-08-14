@@ -13,27 +13,30 @@ These are not product recommendations. They are patterns observed across Sandia 
 | Adversary behavior | Automated ATT&CK-aligned actions | CALDERA (and OT plugins) |
 | Synthetic users | Realistic traffic, artifacts, cognitive models | GHOSTS |
 | Environment | VMs, containers, SDN topologies | minimega, TopoMojo |
-| Orchestration | Experiment graph, scheduling, automation | FIREWHEEL, Steamfitter / phenix |
+| Orchestration | Experiment graph, scheduling, automation | FIREWHEEL, phēnix / SCORCH |
 | Provenance | Capture of workflow and result lineage | Flowcept |
 | Uncertainty / design | Campaign design, sensitivity, UQ | Dakota |
 | Assessment | Result normalization and evidence | Heimdall2, SAF CLI |
 
-**Notes.** FIREWHEEL and phenix are designed around minimega. GHOSTS and CALDERA could participate as model components or external actors, but that composition would require integration adapters. Flowcept is a candidate provenance layer for multi-tool campaigns.
+**Notes.** FIREWHEEL and phēnix both operate in the Sandia experimentation ecosystem around minimega. SCORCH adds repeatable scenario pipelines, breakpoints, and artifact-producing stages to phēnix experiments. GHOSTS and CALDERA could participate as model components or external actors, but those compositions require integration adapters. Flowcept is a candidate provenance layer for multi-tool campaigns.
 
 ## Reference Architecture 2: Cyber-Physical Resilience
 
-**Purpose.** High-fidelity emulation of critical infrastructure (ICS/OT, power, process control) coupled to cyber attack and consequence modeling.
+**Purpose.** High-fidelity emulation of critical infrastructure coupled to cyber attack, control-system behavior, physical-process simulation, and measurable consequences.
 
 | Layer | Role | Representative components |
 |-------|------|---------------------------|
-| Physical fidelity | Process simulation and field-device models | SCEPTRE / ARCADE-style components |
-| Orchestration | Topology + experiment control | phenix, FIREWHEEL |
-| Domain models | Grid or infrastructure optimization / consequence | ExaGO (power), other domain codes |
-| Data exchange | In-core and file-based scientific data | Conduit |
+| Experiment control | Topology, lifecycle, repeatable campaign stages | phēnix, SCORCH, FIREWHEEL |
+| Cyber environment | VMs, networks, traffic, attacker and defender systems | minimega, phēnix topologies |
+| Field-device / ICS boundary | Virtual RTUs, SCADA interfaces, HIL integration | Bennu / Pybennu |
+| Co-simulation / provider boundary | Connect process models and distributed simulators | HELICS, Bennu providers |
+| Physical / domain models | Power, process, waterway, grid, custom simulation | PowerWorld, OpenDSS, PyPower, Simulink, GenericPython, other solvers |
 | Optimization / UQ | Parameter studies, reliability, design | Dakota, Pyomo |
-| Provenance | Reproducibility of multi-physics runs | Flowcept |
+| Provenance | Reproducibility of multi-stage runs | Flowcept and experiment artifacts |
 
-**Notes.** SCEPTRE workflows are commonly driven through phenix on minimega. Conduit could provide a data-exchange layer when coupling compatible simulation packages. Dakota and Pyomo are candidate analysis layers for parameter studies and optimization.
+**Notes.** Public SCEPTRE material is distributed across phēnix, Bennu, images, apps, documentation, and reusable topologies. The architecture is modular: phēnix/minimega instantiate the environment, Bennu exposes control-system and field-device state, and providers couple that state to process solvers or external systems. The GenericPython provider is a particularly useful extension seam for lightweight domain models that do not require a commercial or heavyweight engineering simulator.
+
+This makes SCEPTRE best treated as a **lower-world execution substrate**, not a complete human or societal world model. It can produce and perturb infrastructure state while separate layers model information availability, human behavior, accessibility burden, decisions, and outcomes.
 
 ## Reference Architecture 3: High-Assurance AI Operations
 
@@ -52,7 +55,7 @@ These are not product recommendations. They are patterns observed across Sandia 
 ## Maturity distinctions
 
 - **Mature / production-oriented:** minimega, CALDERA, GHOSTS, Conduit, Dakota, SAF/Heimdall, eMASSer.
-- **Actively evolving research platforms:** FIREWHEEL, phenix/SCEPTRE, Atlas UI 3, TalkPipe, Flowcept, TopoMojo / Crucible components.
-- **Domain-specific or early-stage:** many ARCADE / gait / protonuke components; treat as research artifacts until evaluated.
+- **Actively evolving research platforms:** FIREWHEEL, phēnix/SCEPTRE, Bennu, Atlas UI 3, TalkPipe, Flowcept, TopoMojo / Crucible components.
+- **Domain-specific or early-stage:** many ARCADE / gait / protonuke components and individual research topologies; treat them as research artifacts until evaluated.
 
-Always confirm current license, last meaningful activity, privilege model, and isolation assumptions before range or production use.
+Always confirm current license, last meaningful activity, privilege model, image provenance, authentication defaults, and isolation assumptions before range or production use.
