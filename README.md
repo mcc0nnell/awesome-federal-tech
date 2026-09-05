@@ -4,7 +4,7 @@ Curated **code repositories** for people who deliver federal technology.
 
 Not policy portals. Not marketplaces. Not slideware. Repos you can clone, inspect, and run through your own security process.
 
-Focus areas: RMF / FedRAMP / ATO automation, DevSecOps, supply chain, containers, accessibility, continuous monitoring, and experimental cyber infrastructure.
+Focus areas: RMF / FedRAMP / ATO automation, DevSecOps, supply chain, containers, accessibility, telecommunications and real-time communications, continuous monitoring, and experimental cyber infrastructure.
 
 **Inclusion is not endorsement.** Evaluate license, supply chain, and fitness for your environment yourself.
 
@@ -19,6 +19,7 @@ Focus areas: RMF / FedRAMP / ATO automation, DevSecOps, supply chain, containers
 - [Containers & platforms](#containers--platforms)
 - [Observability](#observability)
 - [Accessibility](#accessibility)
+- [Telecommunications & real-time communications](#telecommunications--real-time-communications)
 - [AI tooling](#ai-tooling)
 - [Experimental Infrastructure and Scientific Assurance](#experimental-infrastructure-and-scientific-assurance)
 - [Federal digital service code](#federal-digital-service-code)
@@ -84,10 +85,15 @@ Focus areas: RMF / FedRAMP / ATO automation, DevSecOps, supply chain, containers
 - **[USWDS](https://github.com/uswds/uswds)** – Federal design system and accessible components.
 - **[axe-core](https://github.com/dequelabs/axe-core)** – Automated accessibility testing. Necessary; not sufficient.
 
+## Telecommunications & real-time communications
+
+- **[NIST JAIN-SIP (JSIP)](https://github.com/usnistgov/jsip)** – Official JAIN-SIP 1.2 Java reference implementation from NIST. Useful for SIP protocol interoperability, controlled telecom integration, and reference work around accessible real-time calling systems. Treat it as a mature maintenance/reference codebase: assess current Java dependencies, TLS/cipher support, parser hardening, and production fit before deployment.
+
 ## AI tooling
 
 - **[Atlas UI 3](https://github.com/sandialabs/atlas-ui-3)** – Governed AI agents (MCP, access control, audit) for high-trust environments.
 - **[TalkPipe](https://github.com/sandialabs/talkpipe)** – Streaming AI pipelines and composable RAG.
+- **[TalkPipe Vault](https://github.com/sandialabs/talkpipe-vault)** – Local-first document search and grounded Q&A built on TalkPipe, with local embeddings and selectable local/cloud chat providers.
 - **[AI Verify](https://github.com/IMDA-BTG/aiverify)** – Testing toolkit for AI governance and model behavior.
 
 ## Experimental Infrastructure and Scientific Assurance
@@ -132,6 +138,7 @@ See also:
 
 - **[Atlas UI 3](https://github.com/sandialabs/atlas-ui-3)** – Governed multi-LLM agents with MCP, access control, and audit.
 - **[TalkPipe](https://github.com/sandialabs/talkpipe)** – Streaming AI / RAG pipeline composition.
+- **[TalkPipe Vault](https://github.com/sandialabs/talkpipe-vault)** – Local-first retrieval and grounded document Q&A; useful as an inspectable reference for provider choice, local embeddings, and controlled knowledge access.
 - **[Heimdall2](https://github.com/mitre/heimdall2)** / **[SAF CLI](https://github.com/mitre/saf)** – Assessment result storage, visualization, and pipeline tooling.
 - **[eMASSer](https://github.com/mitre/emasser)** – CLI automation against the eMASS RMF API.
 - **[Vulcan](https://github.com/mitre/vulcan)** – STIG authoring and InSpec profile development.
@@ -140,7 +147,7 @@ See also:
 
 1. **Cyber Experimentation** – A proposed stack combining CALDERA, GHOSTS, minimega/TopoMojo, FIREWHEEL/phenix, Flowcept, Dakota, and SAF/Heimdall through project-specific adapters.
 2. **Cyber-Physical Resilience** – A proposed composition of SCEPTRE/phenix, ExaGO, Conduit, Dakota/Pyomo, and Flowcept.
-3. **High-Assurance AI Operations** – A proposed composition of Atlas UI 3, TalkPipe, Flowcept, and SAF/Heimdall/eMASSer/OSCAL.
+3. **High-Assurance AI Operations** – A proposed composition of Atlas UI 3, TalkPipe/TalkPipe Vault, Flowcept, and SAF/Heimdall/eMASSer/OSCAL.
 
 Expect operational overhead, privileged components, and isolation requirements. Read licenses, security notes, and deployment assumptions before committing a range or analysis design to any of these platforms.
 

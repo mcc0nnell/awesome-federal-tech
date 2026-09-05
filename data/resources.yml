@@ -690,3 +690,29 @@
   license: Apache-2.0
   last_checked: '2026-08-04'
   security_notes: OT protocol plugins can affect real or simulated industrial processes; isolate carefully and validate against target systems.
+- name: NIST JAIN-SIP (JSIP)
+  url: https://github.com/usnistgov/jsip
+  organization: NIST
+  description: Official JAIN-SIP 1.2 Java SIP specification reference implementation developed by NIST and moved from java.net.
+  categories:
+  - telecom-rtc
+  - foundations
+  resource_type: framework
+  status: maintenance
+  federal_relevance: Canonical NIST SIP reference implementation useful for protocol interoperability, federal telecom engineering, and reference work around accessible real-time calling systems.
+  license: Public Domain
+  last_checked: '2026-09-05'
+  security_notes: Mature legacy protocol code; assess current Java dependencies, TLS and cipher support, parser hardening, denial-of-service resistance, and production deployment assumptions.
+- name: TalkPipe Vault
+  url: https://github.com/sandialabs/talkpipe-vault
+  organization: Sandia National Laboratories
+  description: Local-first document indexing, semantic and keyword search, and grounded question answering built on TalkPipe with local embeddings and selectable chat providers.
+  categories:
+  - experimental-infrastructure
+  - ai-governance
+  resource_type: platform
+  status: active
+  federal_relevance: Provides an inspectable local-first pattern for controlled document retrieval and grounded AI assistance in high-trust research and engineering environments.
+  license: Apache-2.0
+  last_checked: '2026-09-05'
+  security_notes: Evaluate document sensitivity, path confinement, credential storage, provider egress, prompt-injection exposure, index provenance, and model supply-chain controls before deployment.

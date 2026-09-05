@@ -41,6 +41,8 @@ enumeration.
 - **observability-ir** – Logging, observability, incident response
 - **accessibility** – Section 508, WCAG, USWDS, accessible documents, video,
   procurement
+- **telecom-rtc** – SIP, WebRTC, RTT, relay/interoperability infrastructure,
+  real-time communications protocol implementations, and telecom test tooling
 - **ai-governance** – AI risk management, red teaming, model evaluation,
   security, privacy
 - **privacy-records** – Privacy, records management, data governance
