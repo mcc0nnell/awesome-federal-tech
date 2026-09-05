@@ -11,15 +11,17 @@ A resource is eligible when it meets **all** of the following:
 2. **Federal relevance**  
    Directly useful for federal practitioners working on RMF, FedRAMP, ATO
    automation, continuous monitoring, supply-chain security, DevSecOps,
-   containers/platforms, Section 508 / accessibility, AI governance in
-   regulated environments, experimental cyber infrastructure, cyber ranges,
-   synthetic-user systems, scientific workflow provenance, uncertainty
-   quantification, or cyber-physical systems research.
+   containers/platforms, Section 508 / accessibility, telecommunications and
+   real-time communications, AI governance in regulated environments,
+   experimental cyber infrastructure, cyber ranges, synthetic-user systems,
+   scientific workflow provenance, uncertainty quantification, or
+   cyber-physical systems research.
 
 3. **Maintenance status**  
    Prefer meaningful activity (commits, releases) within the last 18–24 months.
-   Archived projects are excluded unless they remain the canonical
-   implementation of a standard.
+   Archived or maintenance-only projects are excluded unless they remain the
+   canonical implementation of a standard or reference specification and their
+   maturity status is stated clearly.
 
 4. **License clarity**  
    Clearly stated open-source (or public domain) license.
