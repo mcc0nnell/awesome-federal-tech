@@ -62,6 +62,7 @@ VALID_CATEGORIES = {
     "containers-k8s",
     "observability-ir",
     "accessibility",
+    "telecom-rtc",
     "ai-governance",
     "privacy-records",
     "acquisition",
