@@ -18,3 +18,9 @@ Evidence and result: see the private GitLab pipeline jobs. Do not interpret a sk
 This route handles **main-branch pushes**. Pull-request head validation and GitHub branch-protection status reporting are **not yet wired**. Do not merge a PR solely because CI-small passed on `main`.
 
 Secrets and pipeline trigger tokens are deliberately not committed to this repository.
+
+## Pull-request verification acceptance criteria
+
+The PR-head gate must reject webhook data that does not match the repository's current GitHub pull-request record. Only same-repository PRs targeting `main` are accepted in this first iteration; fork PRs remain unsupported. Validation must check the GitHub PR number, exact head commit SHA, repository identity, and base branch before any tests run.
+
+A successful `main` pipeline never substitutes for a successful PR-head pipeline. GitHub required-check reporting is a separate integration and remains unimplemented until independently verified.
